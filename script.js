@@ -7,3 +7,6 @@ const cost = [
   { name: '药物', cost: 87.5 },
   { name: '服务', cost: 105 }
   ];
+// 计算总消费
+const total = cost.reduce((sum, item) => sum + item.cost, 0);
+console.log('总消费：', total.toFixed(2));
